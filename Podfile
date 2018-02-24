@@ -1,5 +1,4 @@
-# Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+platform :ios, '11.2'
 
 target 'Trade Diary' do
   use_frameworks!
