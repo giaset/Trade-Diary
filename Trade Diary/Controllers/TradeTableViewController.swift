@@ -9,8 +9,20 @@
 import UIKit
 
 class TradeTableViewController: UIViewController {
+    
+    let tableView = UITableView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .red
+        title = "Trade Diary"
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(presentNewTradeController))
+        
+        view.addSubview(tableView)
+        tableView.pinToSuperview()
+    }
+    
+    @objc func presentNewTradeController() {
+        present(UINavigationController(rootViewController: NewTradeViewController()), animated: true, completion: nil)
     }
 }
