@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F2655CA67DBAB288EC952C9 /* Pods_Trade_Diary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97B9A8BEA2C3217CBBB0EFB5 /* Pods_Trade_Diary.framework */; };
 		6851FDDD20410E8E00C0C9C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6851FDDC20410E8E00C0C9C0 /* AppDelegate.swift */; };
 		6851FDE420410E8E00C0C9C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6851FDE320410E8E00C0C9C0 /* Assets.xcassets */; };
 		6851FDE720410E8E00C0C9C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6851FDE520410E8E00C0C9C0 /* LaunchScreen.storyboard */; };
@@ -20,6 +21,9 @@
 		6851FDE620410E8E00C0C9C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6851FDE820410E8E00C0C9C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6851FDEF20410FAB00C0C9C0 /* TradeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeTableViewController.swift; sourceTree = "<group>"; };
+		97B9A8BEA2C3217CBBB0EFB5 /* Pods_Trade_Diary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Trade_Diary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6FD5DD944981435C21FCE09 /* Pods-Trade Diary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trade Diary.release.xcconfig"; path = "Pods/Target Support Files/Pods-Trade Diary/Pods-Trade Diary.release.xcconfig"; sourceTree = "<group>"; };
+		FF70E953753FC24A1503C9F0 /* Pods-Trade Diary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trade Diary.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Trade Diary/Pods-Trade Diary.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +31,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F2655CA67DBAB288EC952C9 /* Pods_Trade_Diary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05C4B4F8AED7AF54DF3A1266 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				97B9A8BEA2C3217CBBB0EFB5 /* Pods_Trade_Diary.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0D9E0575B29FD966E9AA4056 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FF70E953753FC24A1503C9F0 /* Pods-Trade Diary.debug.xcconfig */,
+				C6FD5DD944981435C21FCE09 /* Pods-Trade Diary.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6851FDD020410E8E00C0C9C0 = {
 			isa = PBXGroup;
 			children = (
 				6851FDDB20410E8E00C0C9C0 /* Trade Diary */,
 				6851FDDA20410E8E00C0C9C0 /* Products */,
+				0D9E0575B29FD966E9AA4056 /* Pods */,
+				05C4B4F8AED7AF54DF3A1266 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,9 +100,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6851FDEB20410E8E00C0C9C0 /* Build configuration list for PBXNativeTarget "Trade Diary" */;
 			buildPhases = (
+				375DB03E0B8F96010178C666 /* [CP] Check Pods Manifest.lock */,
 				6851FDD520410E8E00C0C9C0 /* Sources */,
 				6851FDD620410E8E00C0C9C0 /* Frameworks */,
 				6851FDD720410E8E00C0C9C0 /* Resources */,
+				9C88CB4B9523FD1563B240BB /* [CP] Embed Pods Frameworks */,
+				0316A2392269ACDC5FF30677 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -134,6 +161,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0316A2392269ACDC5FF30677 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Trade Diary/Pods-Trade Diary-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		375DB03E0B8F96010178C666 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Trade Diary-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C88CB4B9523FD1563B240BB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Trade Diary/Pods-Trade Diary-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Trade Diary/Pods-Trade Diary-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6851FDD520410E8E00C0C9C0 /* Sources */ = {
@@ -268,6 +349,7 @@
 		};
 		6851FDEC20410E8E00C0C9C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF70E953753FC24A1503C9F0 /* Pods-Trade Diary.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -283,6 +365,7 @@
 		};
 		6851FDED20410E8E00C0C9C0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6FD5DD944981435C21FCE09 /* Pods-Trade Diary.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
